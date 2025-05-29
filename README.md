@@ -23,6 +23,12 @@ A personal collection of PowerShell and Batch scripts to automate cleanup, boost
 Run scripts as administrator where required.  
 You can clone the repo and use individually:
 
+
+
+
+
+
+
 ```bash
 git clone https://github.com/Kamrulthedev/developer-toolkit-scripts
 cd developer-toolkit-scripts/safe-cleanup
