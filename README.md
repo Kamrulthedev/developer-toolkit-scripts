@@ -128,6 +128,13 @@ Deletes local Git branches that have already been merged into `main` or `master`
 
 ---
 
+## 📦 ব্যবহার কিভাবে করবে:
+- Notepad খুলো
+- কোডটা কপি করে পেস্ট করো
+- Save as → CleanDevSpace.bat
+- Right-click → Run as Administrator
+
+
 ## 📌 License
 
 MIT License
