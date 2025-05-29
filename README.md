@@ -1,35 +1,137 @@
-# Developer Toolkit Scripts 🚀
 
-A personal collection of PowerShell and Batch scripts to automate cleanup, boost productivity, and streamline development tasks.
+# 🛠️ Developer Toolkit Scripts Collection
 
-## 🔧 Tools Included
+A curated set of PowerShell and BAT scripts to help developers keep their Windows systems clean, organized, and productive — **without touching your dev tools or environments.**
 
-### 🧹 Safe Cleanup Scripts
-- Clean temp folders
-- Clear Windows Update Cache
-- Empty Recycle Bin
-- Identify large downloaded files
+---
 
-### ⚙️ Productivity Boosters
-- Auto open dev apps
-- Organize desktop files
+## 📁 Folder Structure
 
-### 🌀 Git Helpers
-- Delete stale Git branches
-- Git status shortcuts (coming soon)
+```
+Developer-Toolkit-Scripts/
+│
+├── safe-cleanup/
+│   ├── safe_cleanup.ps1
+│   ├── safe_cleanup.bat
+│   └── large_file_finder.ps1
+│
+├── productivity/
+│   ├── open_dev_apps.bat
+│   └── auto_organize_desktop.ps1
+│
+└── git-helpers/
+    └── clean_git_branches.bat
+```
 
-## 📦 Usage
+---
 
-Run scripts as administrator where required.  
-You can clone the repo and use individually:
+## 📦 safe-cleanup/
 
+### 🔹 `safe_cleanup.ps1`
 
+**Description:**  
+Cleans system temp folder, user temp folder, Windows update cache, empties Recycle Bin, and lists large files in the Downloads folder — all while keeping your dev tools untouched.
 
+**How to Run:**
 
+1. Open PowerShell as **Administrator**.
+2. Run the following command once to allow script execution (if blocked):
+   ```powershell
+   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+   ```
+3. Then run:
+   ```powershell
+   .\safe_cleanup.ps1
+   ```
 
+---
 
+### 🔹 `safe_cleanup.bat`
 
-```bash
-git clone https://github.com/Kamrulthedev/developer-toolkit-scripts
-cd developer-toolkit-scripts/safe-cleanup
-./safe_cleanup.ps1
+**Description:**  
+Runs the `safe_cleanup.ps1` script using a double-clickable `.bat` file.
+
+**How to Run:**
+
+- Just double-click the file, or run from CMD:
+  ```cmd
+  safe_cleanup.bat
+  ```
+
+---
+
+### 🔹 `large_file_finder.ps1`
+
+**Description:**  
+Scans the Downloads folder and lists files larger than **1GB** in a file named `gb_files.txt` on your Desktop.
+
+**How to Run:**
+
+```powershell
+.\large_file_finder.ps1
+```
+
+---
+
+## ⚙️ productivity/
+
+### 🔹 `open_dev_apps.bat`
+
+**Description:**  
+Opens frequently used developer tools like VS Code, Git Bash, and your browser in one click.
+
+**How to Run:**
+
+- Double-click the file or run:
+  ```cmd
+  open_dev_apps.bat
+  ```
+
+> ⚠️ Make sure paths are correct for your system.
+
+---
+
+### 🔹 `auto_organize_desktop.ps1`
+
+**Description:**  
+Automatically organizes your Desktop by moving files into folders like `Images`, `Docs`, and `Zips`.
+
+**How to Run:**
+
+```powershell
+.\auto_organize_desktop.ps1
+```
+
+---
+
+## 🔁 git-helpers/
+
+### 🔹 `clean_git_branches.bat`
+
+**Description:**  
+Deletes local Git branches that have already been merged into `main` or `master`, except the main branches.
+
+**How to Run:**
+
+1. Open Git Bash in your repository folder.
+2. Run:
+   ```bash
+   ./clean_git_branches.bat
+   ```
+
+---
+
+## 🧠 Tips
+
+- Always **review script logic** before running.
+- These scripts are safe for developers but always make a backup before large cleanups.
+
+---
+
+## 📌 License
+
+MIT License
+
+---
+
+Made with ❤️ by Kamrul 
