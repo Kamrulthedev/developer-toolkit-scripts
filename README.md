@@ -23,7 +23,11 @@ Developer-Toolkit-Scripts/
 │
 └── dev-utils/
     └── port_killer.bat
-    └── projdct_cleaber.bat    
+    └── projdct_cleaber.bat  
+│
+└── LICEDNSE/
+    └── port_killer.bat
+    └── projdct_cleaber.bat         
 ```
 
 ---
